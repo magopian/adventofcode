@@ -64,7 +64,10 @@
 (defn num-nice [input]
   (count (filter nice? input)))
 
-(println (num-nice input))
+(defn part1 []
+  (println "There are"
+           (num-nice input)
+           "nice strings"))
 
 
 ; --- Part Two ---
@@ -118,4 +121,7 @@
 (defn num-new-nice [input]
   (count (filter new-nice? input)))
 
-(println (num-new-nice input))
+(defn part2 []
+  (println "There are"
+           (num-new-nice input)
+           "nice strings under the new rules"))

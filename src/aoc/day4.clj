@@ -50,7 +50,9 @@
 ; (assert (= 1048970 (lowest-number "pqrstuv")))
 
 ; This takes less than 10 seconds on a recent (2015) mbp.
-(println (lowest-number input five-0-coin?))
+(defn part1 []
+  (println "First number which results in a hash with five zeroes:"
+           (lowest-number input five-0-coin?)))
 
 
 ; --- Part Two ---
@@ -60,4 +62,6 @@
 (def six-0-coin? (partial coin? 6))
 
 ; This takes less than 5 minutes on a recent (2015) mbp.
-(println (lowest-number input six-0-coin?))
+(defn part2 []
+  (println "First number which results in a hash with six zeroes:"
+           (lowest-number input six-0-coin?)))

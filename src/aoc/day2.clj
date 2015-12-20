@@ -62,7 +62,9 @@
        (map surface-of-wrapping)
        (reduce +)))
 
-(println (total-wrapping-paper input))
+(defn part1 []
+  (println "Total square feet of wrapping paper is"
+           (total-wrapping-paper input)))
 
 
 ; --- Part Two ---
@@ -113,4 +115,5 @@
        (map length-of-ribbon)
        (reduce +)))
 
-(println (total-ribbon-length input))
+(defn part2 []
+  (println "Total feet of ribbon is" (total-ribbon-length input)))

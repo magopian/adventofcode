@@ -50,7 +50,8 @@
 (assert (= -1 (get-floor "())") (get-floor "))(")))
 (assert (= -3 (get-floor ")))") (get-floor ")())())")))
 
-(println "Part 1: the floor is" (get-floor input))
+(defn part1 []
+  (println "The floor is" (get-floor input)))
 
 
 ; --- Part Two ---
@@ -84,6 +85,7 @@
 (assert (= 1 (get-position ")")))
 (assert (= 5 (get-position "()())")))
 
-(println "Part 2: the position of the character that causes Santa to first"
-         "enter the basement is"
-         (get-position input))
+(defn part2 []
+  (println "The position of the character that causes Santa to first"
+           "enter the basement is"
+           (get-position input)))

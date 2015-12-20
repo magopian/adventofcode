@@ -49,7 +49,10 @@
 (assert (= 4 (how-many-houses "^>v<")))
 (assert (= 2 (how-many-houses "^v^v^v^v^v")))
 
-(println (how-many-houses input))
+(defn part1 []
+  (println "This year,"
+           (how-many-houses input)
+           "houses receive at least one present"))
 
 
 ; --- Part Two ---
@@ -82,4 +85,7 @@
 (assert (= 3 (how-many-houses-with-robo "^>v<")))
 (assert (= 11 (how-many-houses-with-robo "^v^v^v^v^v")))
 
-(println (how-many-houses-with-robo input))
+(defn part2 []
+  (println "This year,"
+           (how-many-houses-with-robo input)
+           "houses receive at least one present"))
