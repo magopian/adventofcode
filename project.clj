@@ -4,4 +4,5 @@
   :license {:name "BSD"
             :url "http://opensource.org/licenses/BSD-3-Clause"}
   :dependencies [[org.clojure/clojure "1.7.0"]
-                 [org.clojure/math.combinatorics "0.1.1"]])
+                 [org.clojure/math.combinatorics "0.1.1"]
+                 [org.clojure/data.json "0.2.6"]])
