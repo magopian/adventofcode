@@ -73,6 +73,9 @@
 
 (defn shortest-route [distances]
   (let [locations (get-locations distances)
+        ; We could optimise by cutting the routes in half: the other half are
+        ; just the same routes, but in reverse order (thus with the same route
+        ; distance).
         all-routes (permutations locations)]
     (apply min (map #(get-route-distance distances %) all-routes))))
 
